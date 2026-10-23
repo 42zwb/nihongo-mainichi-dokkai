@@ -1,7 +1,9 @@
-# 每日日本語読解 | Daily Japanese Reading | 毎日の日本語読解
+# 每日日语阅读 | Daily Japanese Reading | 毎日の日本語読解
 
 本仓库每日发布一篇日语阅读练习。当前只更新 N2 级别；未来可能增加其他级别。
+
 This repository publishes one Japanese reading exercise each day. It currently covers N2 only; other levels may be added later.
+
 このリポジトリでは毎日、日本語の読解教材を公開します。現在はN2レベルのみで、将来的にほかのレベルを追加する場合があります。
 
 ## 中文
@@ -21,8 +23,3 @@ Daily articles are stored in N2 level/ and named YYYY-MM-DD.html.
 記事は、最近の世界ニュースや、科学・社会・文化などの根拠あるテーマをもとに再構成したオリジナル文章です。情報源の文章をそのまま転載しません。本文は約800～1200字で、N2レベルを中心とし、N1の語彙や文法を少し含む場合があります。各HTMLは単独で開くことができ、日本語本文とふりがな表示切替、全文中国語訳、重要語彙・文法の解説に加え、JLPTの長文読解を参考にした選択問題を3問収録します。選択して解答を確認でき、正解と本文中の根拠も表示します。参考資料は各記事の末尾に記載します。
 
 毎日の記事は N2 level/ に保存し、ファイル名は YYYY-MM-DD.html とします。
-
-## Current scope / 当前范围 / 現在の範囲
-
-- Current level: N2 only / 当前仅 N2 / 現在はN2のみ
-- Other levels may be added in the future / 未来可能增加其他级别 / 将来、ほかのレベルを追加する場合があります
