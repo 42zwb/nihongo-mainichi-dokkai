@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N2日语阅读｜MMX火星卫星探测任务</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ink:#253044;--muted:#68758a;--line:#e5eaf0;--accent:#286a5c;--paper:#fff;--bg:#f3f6f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.75}
+main{width:min(900px,calc(100% - 32px));margin:28px auto 56px}
+header,.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:0 5px 20px #172b3d0a}
+header{padding:28px 32px;margin-bottom:16px}
+.kicker{color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.08em}
+h1{font-size:clamp(1.55rem,4vw,2.2rem);line-height:1.45;margin:.35rem 0 .55rem}
+.subtitle{margin:0;color:var(--muted)}
+.card{padding:24px 30px;margin-top:16px}
+h2{font-size:1.2rem;margin:0 0 14px;display:flex;align-items:center;gap:9px}
+h2:before{content:"";width:4px;height:1.1em;border-radius:9px;background:var(--accent)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 16px;flex-wrap:wrap}
+.toolbar p{margin:0;color:var(--muted);font-size:.9rem}
+button{border:0;border-radius:999px;background:var(--accent);color:white;padding:9px 16px;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+button:hover{filter:brightness(.93)}
+.toolbar button{position:fixed;top:16px;right:max(12px,calc((100vw - 900px)/2 + 16px));z-index:20;box-shadow:0 4px 14px #172b3d26}
+button:focus-visible{outline:3px solid #8bbcaf;outline-offset:3px}
+.article{font-family:"Noto Sans JP",sans-serif;font-size:1.12rem;line-height:2.1;letter-spacing:.025em}
+.article p{margin:0 0 1em}
+ruby{ruby-position:over}
+rt{font-family:"Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.52em;line-height:1;color:var(--accent);visibility:hidden}
+.reading-on rt{visibility:visible}
+.translation p{margin:.7em 0}
+.translation p:first-of-type{margin-top:0}
+.quiz-intro{margin:-4px 0 18px;color:var(--muted)}
+.quiz-question{margin:0 0 16px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;min-width:0}
+.quiz-question legend{padding:0 5px;font-weight:700;line-height:1.8}
+.quiz-options{display:grid;gap:7px;margin-top:7px}
+.quiz-option{display:flex;align-items:flex-start;gap:9px;padding:8px 10px;border-radius:8px;cursor:pointer;line-height:1.8}
+.quiz-option:hover{background:#f3f7f6}
+.quiz-option input{flex:0 0 auto;margin-top:.55em;accent-color:var(--accent)}
+.question-type{display:inline-block;margin-right:5px;padding:1px 7px;border-radius:999px;background:#e7f0ed;color:var(--accent);font-size:.76em;font-weight:700;vertical-align:1px}
+.quiz-feedback{width:100%;max-width:100%;margin:10px 0 0;padding:10px 12px;border-left:4px solid var(--accent);background:#f0f7f3;border-radius:0 8px 8px 0;font-size:.94rem;white-space:normal;overflow-wrap:anywhere}
+.quiz-feedback strong{display:inline-block;margin-bottom:3px;padding:2px 8px;border-radius:6px}
+.quiz-feedback a{color:var(--accent);font-weight:700;overflow-wrap:anywhere}
+.quiz-evidence{margin:5px 0 0;line-height:1.7;overflow-wrap:anywhere}
+.quiz-question.is-correct{border-color:#75ad8c}
+.quiz-question.is-correct .quiz-feedback strong{background:#dcefe3;color:#245a3b}
+.quiz-question.is-incorrect{border-color:#d96559}
+.quiz-question.is-incorrect .quiz-feedback{border-left-color:#bd332b;background:#fff0ee;color:#7d211c}
+.quiz-question.is-incorrect .quiz-feedback strong{background:#bd332b;color:#fff}
+.quiz-question.is-incorrect .quiz-feedback a{color:#8f241d}
+.quiz-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.quiz-actions .secondary{background:#e9eef1;color:var(--ink)}
+.quiz-summary{margin:10px 0 0;font-weight:700;color:var(--accent)}
+[hidden]{display:none!important}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:650;font-size:.88rem}
+td:first-child{white-space:nowrap;font-weight:700}
+.grammar-item{padding:14px 0;border-top:1px solid var(--line)}
+.grammar-item:first-of-type{border-top:0;padding-top:0}
+.grammar-item h3{font-size:1.02rem;margin:0 0 5px}
+.grammar-item p{margin:5px 0}
+.examples{padding-left:1.2rem;margin:6px 0 0}
+.examples li{padding-left:.2rem;margin:.35rem 0}
+.example-translation{color:var(--muted);font-size:.94rem}
+.sources{margin:0;padding-left:1.3rem}
+.sources li{margin:.5rem 0}
+.sources a{color:var(--accent);overflow-wrap:anywhere}
+@media(max-width:600px){main{width:calc(100% - 20px);margin:12px auto 30px}header,.card{padding:19px 17px;border-radius:12px}.article{font-size:1.04rem;line-height:2.05}td:first-child{white-space:normal}.toolbar button{top:12px;right:12px}}
+@media print{body{background:white}main{width:100%;margin:0}header,.card{box-shadow:none;break-inside:avoid}button{display:none}rt{visibility:visible}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="kicker">今日科学阅读 · N2 难度为主</div>
+<h1>MMX、<ruby>火星<rt>かせい</rt></ruby>の<ruby>衛星<rt>えいせい</rt></ruby>フォボスへ――<ruby>試料<rt>しりょう</rt></ruby>を<ruby>地球<rt>ちきゅう</rt></ruby>に<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>る<ruby>挑戦<rt>ちょうせん</rt></ruby></h1>
+<p class="subtitle">日本火星卫星探测任务成功发射；从轨道观测到采样返回，仍需逐步跨越哪些挑战？</p>
+</header>
+<section class="card" aria-labelledby="reading-title">
+<h2 id="reading-title">日语正文</h2>
+<div class="toolbar"><p>先读正文，再完成长文阅读练习。</p><button id="furigana-toggle" type="button" aria-pressed="false">ふりがなを表示</button></div>
+<div class="article" id="article">
+<p id="p1"><ruby>2026年10月20日<rt>にせんにじゅうろくねんじゅうがつはつか</rt></ruby>、<ruby>種子島<rt>たねがしま</rt></ruby><ruby>宇宙<rt>うちゅう</rt></ruby>センターから、<ruby>宇宙航空研究開発機構<rt>うちゅうこうくうけんきゅうかいはつきこう</rt></ruby>（JAXA）の<ruby>火星衛星探査機<rt>かせいえいせいたんさき</rt></ruby>「MMX」がH3ロケット10<ruby>号機<rt>ごうき</rt></ruby>で<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げられた。<ruby>機体<rt>きたい</rt></ruby>は<ruby>予定<rt>よてい</rt></ruby>どおりロケットから<ruby>分離<rt>ぶんり</rt></ruby>し、<ruby>軌道<rt>きどう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったとJAXAが<ruby>発表<rt>はっぴょう</rt></ruby>した。この<ruby>計画<rt>けいかく</rt></ruby>は、<ruby>火星<rt>かせい</rt></ruby>の<ruby>衛星<rt>えいせい</rt></ruby>フォボスを<ruby>調<rt>しら</rt></ruby>べ、<ruby>表面<rt>ひょうめん</rt></ruby>の<ruby>試料<rt>しりょう</rt></ruby>を<ruby>地球<rt>ちきゅう</rt></ruby>へ<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>ることを<ruby>目指<rt>めざ</rt></ruby>す。</p>
+<p id="p2">MMXは<ruby>火星圏<rt>かせいけん</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いた<ruby>後<rt>あと</rt></ruby>、フォボスと、もう<ruby>一<rt>ひと</rt></ruby>つの<ruby>衛星<rt>えいせい</rt></ruby>ダイモスを<ruby>観測<rt>かんそく</rt></ruby>する。さらに、<ruby>小型探査車<rt>こがたたんさしゃ</rt></ruby>「イデフィックス」をフォボスへ<ruby>送<rt>おく</rt></ruby>り、<ruby>地表<rt>ちひょう</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>や<ruby>土<rt>つち</rt></ruby>の<ruby>状態<rt>じょうたい</rt></ruby>を<ruby>近<rt>ちか</rt></ruby>くで<ruby>調<rt>しら</rt></ruby>べる<ruby>予定<rt>よてい</rt></ruby>だ。<ruby>探査車<rt>たんさしゃ</rt></ruby>が<ruby>先<rt>さき</rt></ruby>に<ruby>地面<rt>じめん</rt></ruby>を<ruby>確<rt>たし</rt></ruby>かめるのは、<ruby>母船<rt>ぼせん</rt></ruby>が<ruby>試料<rt>しりょう</rt></ruby>を<ruby>採<rt>と</rt></ruby>る<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ<ruby>助<rt>たす</rt></ruby>けになる。<ruby>計画<rt>けいかく</rt></ruby>では、フォボスで<ruby>少<rt>すく</rt></ruby>なくとも10グラムの<ruby>物質<rt>ぶっしつ</rt></ruby>を<ruby>採取<rt>さいしゅ</rt></ruby>し、2031<ruby>年<rt>ねん</rt></ruby>に<ruby>地球<rt>ちきゅう</rt></ruby>へ<ruby>戻<rt>もど</rt></ruby>す。</p>
+<p id="p3"><ruby>火星<rt>かせい</rt></ruby>の<ruby>二<rt>ふた</rt></ruby>つの<ruby>衛星<rt>えいせい</rt></ruby>がどう<ruby>生<rt>う</rt></ruby>まれたかは、まだ<ruby>決着<rt>けっちゃく</rt></ruby>していない。<ruby>小惑星<rt>しょうわくせい</rt></ruby>が<ruby>火星<rt>かせい</rt></ruby>の<ruby>重力<rt>じゅうりょく</rt></ruby>に<ruby>捕<rt>と</rt></ruby>らえられたという<ruby>説<rt>せつ</rt></ruby>と、<ruby>大<rt>おお</rt></ruby>きな<ruby>天体<rt>てんたい</rt></ruby>が<ruby>火星<rt>かせい</rt></ruby>にぶつかった<ruby>際<rt>さい</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>した<ruby>物質<rt>ぶっしつ</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まってできたという<ruby>説<rt>せつ</rt></ruby>がある。<ruby>採取<rt>さいしゅ</rt></ruby>した<ruby>試料<rt>しりょう</rt></ruby>を<ruby>詳<rt>くわ</rt></ruby>しく<ruby>調<rt>しら</rt></ruby>べれば、<ruby>鉱物<rt>こうぶつ</rt></ruby>や<ruby>成分<rt>せいぶん</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いから、どちらの<ruby>説明<rt>せつめい</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>いかを<ruby>考<rt>かんが</rt></ruby>えられる。フォボスの<ruby>土<rt>つち</rt></ruby>には<ruby>火星<rt>かせい</rt></ruby>から<ruby>飛<rt>と</rt></ruby>び<ruby>散<rt>ち</rt></ruby>った<ruby>物質<rt>ぶっしつ</rt></ruby>が<ruby>混<rt>ま</rt></ruby>じる<ruby>可能性<rt>かのうせい</rt></ruby>もあり、<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>が<ruby>衛星<rt>えいせい</rt></ruby>の<ruby>起源<rt>きげん</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つに<ruby>決<rt>き</rt></ruby>めるとは<ruby>限<rt>かぎ</rt></ruby>らない。</p>
+<p id="p4">ただし、フォボスは<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>月<rt>つき</rt></ruby>とは<ruby>環境<rt>かんきょう</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きく<ruby>異<rt>こと</rt></ruby>なる。<ruby>重力<rt>じゅうりょく</rt></ruby>が<ruby>極<rt>きわ</rt></ruby>めて<ruby>小<rt>ちい</rt></ruby>さいため、<ruby>探査車<rt>たんさしゃ</rt></ruby>は<ruby>着地<rt>ちゃくち</rt></ruby><ruby>後<rt>あと</rt></ruby>に<ruby>跳<rt>は</rt></ruby>ねたり、<ruby>地面<rt>じめん</rt></ruby>の<ruby>砂<rt>すな</rt></ruby>に<ruby>埋<rt>う</rt></ruby>まったりする<ruby>恐<rt>おそ</rt></ruby>れがある。<ruby>現地<rt>げんち</rt></ruby>を<ruby>走<rt>はし</rt></ruby>る<ruby>小型車<rt>こがたしゃ</rt></ruby>はゆっくり<ruby>移動<rt>いどう</rt></ruby>し、<ruby>岩<rt>いわ</rt></ruby>の<ruby>多<rt>おお</rt></ruby>さや<ruby>地面<rt>じめん</rt></ruby>の<ruby>硬<rt>かた</rt></ruby>さを<ruby>調<rt>しら</rt></ruby>べる。<ruby>安全<rt>あんぜん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>す<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>採取<rt>さいしゅ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>える<ruby>時間<rt>じかん</rt></ruby>や<ruby>機体<rt>きたい</rt></ruby>の<ruby>電力<rt>でんりょく</rt></ruby>にも<ruby>気<rt>き</rt></ruby>を<ruby>配<rt>くば</rt></ruby>らなければならない。JAXAは<ruby>10月21日<rt>じゅうがつにじゅういちにち</rt></ruby>、<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げ<ruby>後<rt>ご</rt></ruby>の<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>初期運用<rt>しょきうんよう</rt></ruby>が<ruby>正常<rt>せいじょう</rt></ruby>に<ruby>終<rt>お</rt></ruby>わり、<ruby>機体<rt>きたい</rt></ruby>の<ruby>状態<rt>じょうたい</rt></ruby>が<ruby>保<rt>たも</rt></ruby>たれていると<ruby>発表<rt>はっぴょう</rt></ruby>した。</p>
+<p id="p5"><ruby>日本<rt>にほん</rt></ruby>が<ruby>主導<rt>しゅどう</rt></ruby>するこの<ruby>計画<rt>けいかく</rt></ruby>には、<ruby>米国<rt>べいこく</rt></ruby>や<ruby>欧州<rt>おうしゅう</rt></ruby>の<ruby>機関<rt>きかん</rt></ruby>も<ruby>機器<rt>きき</rt></ruby>や<ruby>探査車<rt>たんさしゃ</rt></ruby>の<ruby>開発<rt>かいはつ</rt></ruby>で<ruby>参加<rt>さんか</rt></ruby>している。<ruby>火星圏<rt>かせいけん</rt></ruby>から<ruby>試料<rt>しりょう</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>る<ruby>試<rt>こころ</rt></ruby>みは、<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げに<ruby>成功<rt>せいこう</rt></ruby>しただけで<ruby>達成<rt>たっせい</rt></ruby>されるわけではない。<ruby>火星<rt>かせい</rt></ruby><ruby>到着<rt>とうちゃく</rt></ruby>、<ruby>衛星<rt>えいせい</rt></ruby>の<ruby>観測<rt>かんそく</rt></ruby>、<ruby>着陸<rt>ちゃくりく</rt></ruby>、<ruby>採取<rt>さいしゅ</rt></ruby>、<ruby>地球<rt>ちきゅう</rt></ruby>への<ruby>帰還<rt>きかん</rt></ruby>という<ruby>段階<rt>だんかい</rt></ruby>を<ruby>一<rt>ひと</rt></ruby>つずつ<ruby>越<rt>こ</rt></ruby>える<ruby>必要<rt>ひつよう</rt></ruby>がある。<ruby>今後<rt>こんご</rt></ruby>、<ruby>探査<rt>たんさ</rt></ruby>が<ruby>進<rt>すす</rt></ruby>むに<ruby>伴<rt>ともな</rt></ruby>って、<ruby>衛星<rt>えいせい</rt></ruby>の<ruby>成<rt>な</rt></ruby>り<ruby>立<rt>た</rt></ruby>ちだけでなく、<ruby>惑星<rt>わくせい</rt></ruby>の<ruby>材料<rt>ざいりょう</rt></ruby>がどのように<ruby>運<rt>はこ</rt></ruby>ばれるのかも<ruby>見<rt>み</rt></ruby>えてくるかもしれない。<ruby>今回<rt>こんかい</rt></ruby>の<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げは、<ruby>長<rt>なが</rt></ruby>い<ruby>旅<rt>たび</rt></ruby>の<ruby>始<rt>はじ</rt></ruby>まりにすぎない。</p>
+</div>
+</section>
+<section class="card quiz-card" aria-labelledby="quiz-title">
+<h2 id="quiz-title">长文阅读练习｜3题</h2>
+<p class="quiz-intro">本组练习分别考查文章主旨、基于资料的推断，以及任务设计理由。每题请选择一个最合适的选项，全部作答后点击“确认答案”。</p>
+<form id="quiz-form">
+<fieldset class="quiz-question" data-answer="a" data-evidence="p1 p3 p5" data-quote1="この計画は、火星の衛星フォボスを調べ、表面の試料を地球へ持ち帰ることを目指す。" data-quote2="火星の二つの衛星がどう生まれたかは、まだ決着していない。" data-quote3="今回の打ち上げは、長い旅の始まりにすぎない。">
+<legend><span class="question-type">主旨理解</span>1. <ruby>本文<rt>ほんぶん</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>のテーマとして、<ruby>最<rt>もっと</rt></ruby>も<ruby>適当<rt>てきとう</rt></ruby>なものはどれか。</legend>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q1" value="a"><span>A. <ruby>火星<rt>かせい</rt></ruby>の<ruby>二<rt>ふた</rt></ruby>つの<ruby>衛星<rt>えいせい</rt></ruby>の<ruby>成<rt>な</rt></ruby>り<ruby>立<rt>た</rt></ruby>ちを<ruby>調<rt>しら</rt></ruby>べるため、MMXの<ruby>試料<rt>しりょう</rt></ruby><ruby>採取<rt>さいしゅ</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>と<ruby>課題<rt>かだい</rt></ruby>を<ruby>紹介<rt>しょうかい</rt></ruby>すること。</span></label>
+<label class="quiz-option"><input type="radio" name="q1" value="b"><span>B. H3ロケットの<ruby>性能<rt>せいのう</rt></ruby>と、<ruby>日本<rt>にほん</rt></ruby>の<ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げ<ruby>技術<rt>ぎじゅつ</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>すること。</span></label>
+<label class="quiz-option"><input type="radio" name="q1" value="c"><span>C. <ruby>火星<rt>かせい</rt></ruby>に<ruby>人<rt>ひと</rt></ruby>を<ruby>送<rt>おく</rt></ruby>り、<ruby>長期滞在<rt>ちょうきたいざい</rt></ruby>のための<ruby>基地<rt>きち</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えること。</span></label>
+<label class="quiz-option"><input type="radio" name="q1" value="d"><span>D. <ruby>欧州<rt>おうしゅう</rt></ruby>の<ruby>探査車<rt>たんさしゃ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、フォボスの<ruby>地下<rt>ちか</rt></ruby>に<ruby>水<rt>みず</rt></ruby>があるかを<ruby>確認<rt>かくにん</rt></ruby>すること。</span></label></div><div class="quiz-feedback" hidden></div></fieldset>
+<fieldset class="quiz-question" data-answer="c" data-evidence="p3 p5" data-quote1="採取した試料を詳しく調べれば、鉱物や成分の違いから、どちらの説明に近いかを考えられる。" data-quote2="火星到着、衛星の観測、着陸、採取、地球への帰還という段階を一つずつ越える必要がある。">
+<legend><span class="question-type">推論理解</span>2. サンプルを<ruby>地球<rt>ちきゅう</rt></ruby>で<ruby>分析<rt>ぶんせき</rt></ruby>することで、<ruby>何<rt>なに</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かると<ruby>期待<rt>きたい</rt></ruby>されているか。</legend>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q2" value="a"><span>A. <ruby>火星<rt>かせい</rt></ruby>とフォボスが<ruby>同<rt>おな</rt></ruby>じ<ruby>時期<rt>じき</rt></ruby>に<ruby>生<rt>う</rt></ruby>まれたことを、<ruby>必<rt>かなら</rt></ruby>ず<ruby>確定<rt>かくてい</rt></ruby>できる。</span></label>
+<label class="quiz-option"><input type="radio" name="q2" value="b"><span>B. <ruby>試料<rt>しりょう</rt></ruby>の<ruby>成分<rt>せいぶん</rt></ruby>から、フォボスの<ruby>表面<rt>ひょうめん</rt></ruby>に<ruby>生物<rt>せいぶつ</rt></ruby>がいることをすぐ<ruby>確認<rt>かくにん</rt></ruby>できる。</span></label>
+<label class="quiz-option"><input type="radio" name="q2" value="c"><span>C. フォボスの<ruby>起源<rt>きげん</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べ、<ruby>火星<rt>かせい</rt></ruby>から<ruby>来<rt>き</rt></ruby>た<ruby>物質<rt>ぶっしつ</rt></ruby>が<ruby>混<rt>ま</rt></ruby>じっている<ruby>可能性<rt>かのうせい</rt></ruby>も<ruby>確<rt>たし</rt></ruby>かめられる。</span></label>
+<label class="quiz-option"><input type="radio" name="q2" value="d"><span>D. フォボスとダイモスが<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>重力<rt>じゅうりょく</rt></ruby>で<ruby>捕<rt>と</rt></ruby>らえられたことを<ruby>証明<rt>しょうめい</rt></ruby>できる。</span></label></div><div class="quiz-feedback" hidden></div></fieldset>
+<fieldset class="quiz-question" data-answer="b" data-evidence="p2 p4" data-quote1="探査車が先に地面を確かめるのは、母船が試料を採る場所を選ぶ助けになる。" data-quote2="安全な場所を探す一方で、採取に使える時間や機体の電力にも気を配らなければならない。">
+<legend><span class="question-type">理由理解</span>3. <ruby>探査車<rt>たんさしゃ</rt></ruby>を<ruby>先<rt>さき</rt></ruby>にフォボスの<ruby>地表<rt>ちひょう</rt></ruby>で<ruby>動<rt>うご</rt></ruby>かす<ruby>目的<rt>もくてき</rt></ruby>として、<ruby>最<rt>もっと</rt></ruby>も<ruby>適当<rt>てきとう</rt></ruby>なものはどれか。</legend>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q3" value="a"><span>A. <ruby>母船<rt>ぼせん</rt></ruby>と<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>通信<rt>つうしん</rt></ruby>を<ruby>代<rt>か</rt></ruby>わりに<ruby>行<rt>おこな</rt></ruby>い、<ruby>着陸船<rt>ちゃくりくせん</rt></ruby>への<ruby>指示<rt>しじ</rt></ruby>を<ruby>地球<rt>ちきゅう</rt></ruby>から<ruby>伝<rt>つた</rt></ruby>えるため。</span></label>
+<label class="quiz-option"><input type="radio" name="q3" value="b"><span>B. <ruby>地面<rt>じめん</rt></ruby>や<ruby>岩<rt>いわ</rt></ruby>の<ruby>状態<rt>じょうたい</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べ、<ruby>母船<rt>ぼせん</rt></ruby>が<ruby>試料<rt>しりょう</rt></ruby>を<ruby>採取<rt>さいしゅ</rt></ruby>する<ruby>安全<rt>あんぜん</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ<ruby>助<rt>たす</rt></ruby>けにするため。</span></label>
+<label class="quiz-option"><input type="radio" name="q3" value="c"><span>C. <ruby>試料<rt>しりょう</rt></ruby>をすべて<ruby>探査車<rt>たんさしゃ</rt></ruby>だけで<ruby>採<rt>と</rt></ruby>り、<ruby>母船<rt>ぼせん</rt></ruby>を<ruby>着陸<rt>ちゃくりく</rt></ruby>させないため。</span></label>
+<label class="quiz-option"><input type="radio" name="q3" value="d"><span>D. <ruby>探査車<rt>たんさしゃ</rt></ruby>が<ruby>着陸船<rt>ちゃくりくせん</rt></ruby>より<ruby>多<rt>おお</rt></ruby>くの<ruby>電力<rt>でんりょく</rt></ruby>を<ruby>作<rt>つく</rt></ruby>り、フォボス<ruby>全体<rt>ぜんたい</rt></ruby>を<ruby>観測<rt>かんそく</rt></ruby>するため。</span></label></div><div class="quiz-feedback" hidden></div></fieldset>
+<div class="quiz-actions"><button id="check-answers" type="button">确认答案</button><button id="reset-quiz" class="secondary" type="button">重新作答</button></div>
+<p id="quiz-summary" class="quiz-summary" role="status" aria-live="polite"></p></form></section>
+<section class="card translation"><h2>全文翻译</h2>
+<p>2026年10月20日，宇宙航空研究开发机构（JAXA）的火星卫星探测器“MMX”搭乘H3十号机，从种子岛宇宙中心发射。JAXA宣布，探测器按计划与火箭分离并进入轨道。这项任务旨在调查火星卫星福波斯，并把其表面样本带回地球。</p>
+<p>到达火星区域后，MMX将观测福波斯和另一颗卫星戴摩斯。它还计划把小型探测车“伊德菲克斯”送上福波斯，近距离检查地表和土壤。探测车先确认地面情况，可帮助母船选择采样地点。计划至少采集10克物质，并于2031年送回地球。</p>
+<p>火星的两颗卫星如何形成，目前仍没有定论。一种说法认为，它们是被火星引力捕获的小行星；另一种说法认为，大型天体撞击火星后飞散的物质聚集起来，形成了卫星。仔细分析样本中的矿物和成分差异，有助于判断它更接近哪种解释。福波斯的土壤还可能混有从火星飞散出的物质，因此调查结果未必能将卫星起源归结为唯一答案。</p>
+<p>不过，福波斯的环境与地球的月球大不相同。由于引力极小，探测车着陆后可能弹跳，也可能陷入地面沙土。探测车会在当地缓慢移动，检查岩石分布和地面硬度。它在寻找安全地点的同时，还必须留意采样时间和设备电力。JAXA于10月21日宣布，发射后的重要初期运行正常结束，探测器状态良好。</p>
+<p>这项由日本主导的任务还有美国和欧洲机构参与，协助提供仪器或开发探测车。从火星区域带回样本，不能因为成功发射就算完成。探测器还要依次经历抵达火星、观测卫星、着陆、采样和返回地球等阶段。随着探测推进，人们或许不仅能了解卫星的形成，也能进一步了解行星物质如何在太空中移动。这次发射只是漫长旅程的开端。</p></section>
+<section class="card"><h2>重点词汇</h2><table><thead><tr><th>词语</th><th>含义与用法</th></tr></thead><tbody>
+<tr><td><ruby>火星圏<rt>かせいけん</rt></ruby></td><td>火星周围的空间区域；宇宙探测任务常用表达。</td></tr>
+<tr><td><ruby>探査車<rt>たんさしゃ</rt></ruby></td><td>探测车、巡视器；用于在天体表面移动并进行观察。</td></tr>
+<tr><td><ruby>試料<rt>しりょう</rt></ruby></td><td>试料、样本；用于研究分析的物质，与较广义的「サンプル」相近。</td></tr>
+<tr><td><ruby>採取<rt>さいしゅ</rt></ruby></td><td>采集、取得；常用于从自然环境中收集物质或数据。</td></tr>
+<tr><td><ruby>小惑星<rt>しょうわくせい</rt></ruby></td><td>小行星；围绕太阳运行、体积比行星小的天体。</td></tr>
+<tr><td><ruby>重力<rt>じゅうりょく</rt></ruby></td><td>重力；使物体相互吸引的力。本文说明福波斯表面活动的难点。</td></tr>
+<tr><td><ruby>起源<rt>きげん</rt></ruby></td><td>起源、来源；常用于讨论天体、文化或现象如何形成。</td></tr>
+<tr><td><ruby>帰還<rt>きかん</rt></ruby></td><td>返回、归来；较正式的词语，常用于航天器或人员回到出发地。</td></tr>
+</tbody></table></section>
+<section class="card"><h2>重点语法</h2>
+<div class="grammar-item"><h3>1. 动词辞书形／名词＋に伴って：随着……；伴随……</h3><p>表示一个变化或行动发生时，另一相关变化也随之发生。动词接辞书形，名词直接接「に伴って」；较正式的书面语中也常用「に伴い」。本文「探査が進むに伴って」强调知识会随任务推进而增加。</p><ul class="examples">
+<li><ruby>研究<rt>けんきゅう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>むに<ruby>伴<rt>ともな</rt></ruby>って、<ruby>新<rt>あたら</rt></ruby>しい<ruby>疑問<rt>ぎもん</rt></ruby>も<ruby>見<rt>み</rt></ruby>つかっている。<span class="example-translation">（随着研究推进，新的疑问也不断出现。）</span></li>
+<li><ruby>人口<rt>じんこう</rt></ruby>の<ruby>増加<rt>ぞうか</rt></ruby>に<ruby>伴<rt>ともな</rt></ruby>って、<ruby>交通量<rt>こうつうりょう</rt></ruby>も<ruby>増<rt>ふ</rt></ruby>えてきた。<span class="example-translation">（随着人口增加，交通流量也变大了。）</span></li></ul></div>
+<div class="grammar-item"><h3>2. 普通形＋とは限らない：未必……；不一定……</h3><p>接在动词、い形容词普通形后；名词和ナ形容词可用「だとは限らない」或「であるとは限らない」。表示一般看法并非在所有情况下都成立，常与「必ずしも」搭配。本文指出，探测结果不一定能让卫星起源只有一个确定答案。</p><ul class="examples">
+<li><ruby>新<rt>あたら</rt></ruby>しい<ruby>機械<rt>きかい</rt></ruby>を<ruby>使<rt>つか</rt></ruby>えば、<ruby>必<rt>かなら</rt></ruby>ずしも<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>早<rt>はや</rt></ruby>くなるとは<ruby>限<rt>かぎ</rt></ruby>らない。<span class="example-translation">（使用新机器，作业速度也未必一定会变快。）</span></li>
+<li><ruby>一度<rt>いちど</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>で、<ruby>原因<rt>げんいん</rt></ruby>がすべて<ruby>分<rt>わ</rt></ruby>かるとは<ruby>限<rt>かぎ</rt></ruby>らない。<span class="example-translation">（仅凭一次实验，未必就能弄清全部原因。）</span></li></ul></div>
+<div class="grammar-item"><h3>3. 普通形＋一方で：另一方面……；与此同时……</h3><p>动词或い形容词接普通形；名词、ナ形容词可接「である一方で」。用于并列呈现两个相关侧面，常用于比较利弊、条件或不同要求。本文一边说明探查安全地点，一边指出时间和电力也必须兼顾。</p><ul class="examples">
+<li><ruby>宇宙探査<rt>うちゅうたんさ</rt></ruby>は<ruby>新<rt>あたら</rt></ruby>しい<ruby>知識<rt>ちしき</rt></ruby>をもたらす<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>長<rt>なが</rt></ruby>い<ruby>準備<rt>じゅんび</rt></ruby>と<ruby>大<rt>おお</rt></ruby>きな<ruby>費用<rt>ひよう</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だ。<span class="example-translation">（宇宙探测带来新知识，另一方面也需要长期准备和大量经费。）</span></li>
+<li>この<ruby>装置<rt>そうち</rt></ruby>は<ruby>小型<rt>こがた</rt></ruby>である<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>観測<rt>かんそく</rt></ruby>できる<ruby>範囲<rt>はんい</rt></ruby>が<ruby>限<rt>かぎ</rt></ruby>られている。<span class="example-translation">（这台装置虽小，但可观测范围有限。）</span></li></ul></div>
+<div class="grammar-item"><h3>4. 名词／普通形＋にすぎない：只不过……；仅仅……</h3><p>接在名词或动词普通形后，限定程度或范围，表示「不超过……」。本文「始まりにすぎない」强调成功发射只是整个任务的起点，并不等于任务已经完成。</p><ul class="examples">
+<li><ruby>打<rt>う</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げの<ruby>成功<rt>せいこう</rt></ruby>は、<ruby>任務<rt>にんむ</rt></ruby>の<ruby>始<rt>はじ</rt></ruby>まりにすぎない。<span class="example-translation">（发射成功只不过是任务的开始。）</span></li>
+<li>この<ruby>画像<rt>がぞう</rt></ruby>は、<ruby>探査<rt>たんさ</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>すにすぎない。<span class="example-translation">（这张图像只展示了探测成果的一部分。）</span></li></ul></div></section>
+<section class="card"><h2>参考来源</h2><ul class="sources">
+<li><a href="https://www.jaxa.jp/press/2026/10/20261020-1_j.html" target="_blank" rel="noopener">JAXA：H3ロケット10号機による火星衛星探査機（MMX）の打上げ結果</a>，2026-10-20；核对发射时间及探测器进入轨道。</li>
+<li><a href="https://www.jaxa.jp/press/2026/10/20261021-1_j.html" target="_blank" rel="noopener">JAXA：火星衛星探査機（MMX）の初期クリティカル運用フェーズ終了</a>，2026-10-21；核对初期关键操作和探测器状态。</li>
+<li><a href="https://apnews.com/article/japan-mars-moon-mission-fb51fbbf90374631e8ae658f9ca46154" target="_blank" rel="noopener">AP：Japan launches spacecraft to mysterious moons of Mars in a bold mission to bring home soil samples</a>，2026-10-19（UTC；日本当地为10月20日）；核对任务目标、采样量和预计返回年份。</li>
+</ul></section>
+</main>
+
+<script>
+const button=document.getElementById("furigana-toggle");
+button.addEventListener("click",()=>{
+  const enabled=document.body.classList.toggle("reading-on");
+  button.setAttribute("aria-pressed",String(enabled));
+  button.textContent=enabled?"ふりがなを隠す":"ふりがなを表示";
+});
+</script>
+<script>
+const quizForm = document.getElementById("quiz-form");
+const quizQuestions = [...quizForm.querySelectorAll(".quiz-question")];
+const quizSummary = document.getElementById("quiz-summary");
+const checkAnswers = document.getElementById("check-answers");
+function clearQuizFeedback() {
+  quizQuestions.forEach((question) => {
+    question.classList.remove("is-correct", "is-incorrect");
+    const feedback = question.querySelector(".quiz-feedback");
+    feedback.hidden = true;
+    feedback.replaceChildren();
+  });
+  quizSummary.textContent = "";
+}
+checkAnswers.addEventListener("click", () => {
+  clearQuizFeedback();
+  const unanswered = quizQuestions.filter((question) => !question.querySelector("input:checked"));
+  if (unanswered.length) {
+    quizSummary.textContent = `还有 ${unanswered.length} 题未选择，请完成后再核对。`;
+    unanswered[0].querySelector("legend").scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+  let score = 0;
+  quizQuestions.forEach((question, index) => {
+    const selected = question.querySelector("input:checked").value;
+    const correct = selected === question.dataset.answer;
+    if (correct) score += 1;
+    question.classList.add(correct ? "is-correct" : "is-incorrect");
+    const feedback = question.querySelector(".quiz-feedback");
+    const status = document.createElement("strong");
+    status.textContent = `${correct ? "回答正确" : "未答对"}。正确答案：${question.dataset.answer.toUpperCase()}。`;
+    feedback.append(status, document.createElement("br"));
+    const evidenceIds = question.dataset.evidence.trim().split(/\s+/);
+    evidenceIds.forEach((id, evidenceIndex) => {
+      const paragraphNumber = Number(id.replace(/^p/, ""));
+      const evidence = document.createElement("p");
+      evidence.className = "quiz-evidence";
+      const link = document.createElement("a");
+      link.href = `#${id}`;
+      link.textContent = `查看原文第 ${paragraphNumber} 段`;
+      evidence.append(link, document.createTextNode(`：「${question.dataset[`quote${evidenceIndex + 1}`]}」`));
+      feedback.append(evidence);
+    });
+    feedback.hidden = false;
+  });
+  quizSummary.textContent = `答对 ${score} / ${quizQuestions.length} 题。可点击各题的原文段落链接核对依据。`;
+});
+document.getElementById("reset-quiz").addEventListener("click", () => {
+  quizForm.reset();
+  clearQuizFeedback();
+});
+quizForm.addEventListener("change", clearQuizFeedback);
+</script>
+</body>
+</html>
