@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N2日语阅读｜セルビアの学生運動</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--ink:#253044;--muted:#68758a;--line:#e5eaf0;--accent:#286a5c;--paper:#fff;--bg:#f3f6f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.75}
+main{width:min(900px,calc(100% - 32px));margin:28px auto 56px}
+header,.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:0 5px 20px #172b3d0a}
+header{padding:28px 32px;margin-bottom:16px}
+.kicker{color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.08em}
+h1{font-size:clamp(1.55rem,4vw,2.2rem);line-height:1.45;margin:.35rem 0 .55rem}
+.subtitle{margin:0;color:var(--muted)}
+.card{padding:24px 30px;margin-top:16px}
+h2{font-size:1.2rem;margin:0 0 14px;display:flex;align-items:center;gap:9px}
+h2:before{content:"";width:4px;height:1.1em;border-radius:9px;background:var(--accent)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 16px;flex-wrap:wrap}
+.toolbar p{margin:0;color:var(--muted);font-size:.9rem}
+button{border:0;border-radius:999px;background:var(--accent);color:white;padding:9px 16px;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+button:hover{filter:brightness(.93)}
+.toolbar button{position:fixed;top:16px;right:max(12px,calc((100vw - 900px)/2 + 16px));z-index:20;box-shadow:0 4px 14px #172b3d26}
+button:focus-visible{outline:3px solid #8bbcaf;outline-offset:3px}
+.article{font-family:"Noto Sans JP",sans-serif;font-size:1.12rem;line-height:2.1;letter-spacing:.025em}
+.article p{margin:0 0 1em}
+ruby{ruby-position:over}
+rt{font-family:"Noto Sans JP",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.52em;line-height:1;color:var(--accent);visibility:hidden}
+.reading-on rt{visibility:visible}
+.translation p{margin:.7em 0}
+.translation p:first-of-type{margin-top:0}
+.quiz-intro{margin:-4px 0 18px;color:var(--muted)}
+.quiz-question{margin:0 0 16px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;min-width:0}
+.quiz-question legend{padding:0 5px;font-weight:700;line-height:1.8}
+.quiz-options{display:grid;gap:7px;margin-top:7px}
+.quiz-option{display:flex;align-items:flex-start;gap:9px;padding:8px 10px;border-radius:8px;cursor:pointer;line-height:1.8}
+.quiz-option:hover{background:#f3f7f6}
+.quiz-option input{flex:0 0 auto;margin-top:.55em;accent-color:var(--accent)}
+.question-type{display:inline-block;margin-right:5px;padding:1px 7px;border-radius:999px;background:#e7f0ed;color:var(--accent);font-size:.76em;font-weight:700;vertical-align:1px}
+.quiz-feedback{width:100%;max-width:100%;margin:10px 0 0;padding:10px 12px;border-left:4px solid var(--accent);background:#f0f7f3;border-radius:0 8px 8px 0;font-size:.94rem;white-space:normal;overflow-wrap:anywhere}
+.quiz-feedback strong{display:inline-block;margin-bottom:3px;padding:2px 8px;border-radius:6px}
+.quiz-feedback a{color:var(--accent);font-weight:700;overflow-wrap:anywhere}
+.quiz-evidence{margin:5px 0 0;line-height:1.7;overflow-wrap:anywhere}
+.quiz-question.is-correct{border-color:#75ad8c}
+.quiz-question.is-correct .quiz-feedback strong{background:#dcefe3;color:#245a3b}
+.quiz-question.is-incorrect{border-color:#d96559}
+.quiz-question.is-incorrect .quiz-feedback{border-left-color:#bd332b;background:#fff0ee;color:#7d211c}
+.quiz-question.is-incorrect .quiz-feedback strong{background:#bd332b;color:#fff}
+.quiz-question.is-incorrect .quiz-feedback a{color:#8f241d}
+.quiz-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.quiz-actions .secondary{background:#e9eef1;color:var(--ink)}
+.quiz-summary{margin:10px 0 0;font-weight:700;color:var(--accent)}
+[hidden]{display:none!important}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:650;font-size:.88rem}
+td:first-child{white-space:nowrap;font-weight:700}
+.grammar-item{padding:14px 0;border-top:1px solid var(--line)}
+.grammar-item:first-of-type{border-top:0;padding-top:0}
+.grammar-item h3{font-size:1.02rem;margin:0 0 5px}
+.grammar-item p{margin:5px 0}
+.examples{padding-left:1.2rem;margin:6px 0 0}
+.examples li{padding-left:.2rem;margin:.35rem 0}
+.example-translation{color:var(--muted);font-size:.94rem}
+.sources{margin:0;padding-left:1.3rem}
+.sources li{margin:.5rem 0}
+.sources a{color:var(--accent);overflow-wrap:anywhere}
+@media(max-width:600px){main{width:calc(100% - 20px);margin:12px auto 30px}header,.card{padding:19px 17px;border-radius:12px}.article{font-size:1.04rem;line-height:2.05}td:first-child{white-space:normal}.toolbar button{top:12px;right:12px}}
+@media print{body{background:white}main{width:100%;margin:0}header,.card{box-shadow:none;break-inside:avoid}button{display:none}rt{visibility:visible}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="kicker">今日时事新闻 · N2 难度为主</div>
+<h1><ruby>抗議<rt>こうぎ</rt></ruby>から<ruby>議会<rt>ぎかい</rt></ruby>へ――セルビアの<ruby>学生運動<rt>がくせいうんどう</rt></ruby>が<ruby>直面<rt>ちょくめん</rt></ruby>する<ruby>次<rt>つぎ</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby></h1>
+<p class="subtitle">塞尔维亚学生支持的名单在议会选举中获胜；从街头诉求走向制度改革，胜选之后还有哪些挑战？</p>
+</header>
+<section class="card" aria-labelledby="reading-title">
+<h2 id="reading-title">日语正文</h2>
+<div class="toolbar"><p>文章分为五段。先阅读日文，再完成下方的长文阅读练习。</p><button id="furigana-toggle" type="button" aria-pressed="false">ふりがなを表示</button></div>
+<div class="article" id="article">
+<p id="p1"><ruby>2026年10月25日<rt>にせんにじゅうろくねんじゅうがつにじゅうごにち</rt></ruby>、セルビアで<ruby>議会選挙<rt>ぎかいせんきょ</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われ、<ruby>長<rt>なが</rt></ruby>く<ruby>国<rt>くに</rt></ruby>を<ruby>率<rt>ひき</rt></ruby>いてきたアレクサンダル・ブチッチ<ruby>氏<rt>し</rt></ruby>は、<ruby>学生<rt>がくせい</rt></ruby>が<ruby>支<rt>ささ</rt></ruby>える「<ruby>学生<rt>がくせい</rt></ruby>リスト」の<ruby>勝利<rt>しょうり</rt></ruby>を<ruby>認<rt>みと</rt></ruby>めた。ただし、<ruby>投票日夜<rt>とうひょうびや</rt></ruby>の<ruby>時点<rt>じてん</rt></ruby>で<ruby>最終結果<rt>さいしゅうけっか</rt></ruby>はまだ<ruby>発表<rt>はっぴょう</rt></ruby>されていない。ブチッチ<ruby>氏<rt>し</rt></ruby>は<ruby>速報的<rt>そくほうてき</rt></ruby>な<ruby>推計<rt>すいけい</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>し、<ruby>学生側<rt>がくせいがわ</rt></ruby>が<ruby>勝<rt>か</rt></ruby>ったとの<ruby>見通<rt>みとお</rt></ruby>しを<ruby>述<rt>の</rt></ruby>べた。<ruby>選挙管理委員会<rt>せんきょかんりいいんかい</rt></ruby>の<ruby>発表<rt>はっぴょう</rt></ruby>と<ruby>党側<rt>とうがわ</rt></ruby>の<ruby>推計<rt>すいけい</rt></ruby>を<ruby>区別<rt>くべつ</rt></ruby>して<ruby>見<rt>み</rt></ruby>る<ruby>必要<rt>ひつよう</rt></ruby>がある。セルビアの<ruby>議会<rt>ぎかい</rt></ruby>は250<ruby>議席<rt>ぎせき</rt></ruby>で<ruby>構成<rt>こうせい</rt></ruby>される。<ruby>選挙管理委員会<rt>せんきょかんりいいんかい</rt></ruby>は、<ruby>10月9日時点<rt>じゅうがつここのかじてん</rt></ruby>の<ruby>登録有権者<rt>とうろくゆうけんしゃ</rt></ruby>を<ruby>約<rt>やく</rt></ruby>645<ruby>万人<rt>まんにん</rt></ruby>と<ruby>発表<rt>はっぴょう</rt></ruby>している。</p>
+<p id="p2">この<ruby>選挙<rt>せんきょ</rt></ruby>の<ruby>背景<rt>はいけい</rt></ruby>には、<ruby>2024年11月<rt>にせんにじゅうよねんじゅういちがつ</rt></ruby>に<ruby>北部<rt>ほくぶ</rt></ruby>の<ruby>都市<rt>とし</rt></ruby>ノヴィ・サドで<ruby>起<rt>お</rt></ruby>きた<ruby>駅<rt>えき</rt></ruby>の<ruby>屋根<rt>やね</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>が<ruby>崩<rt>くず</rt></ruby>れた<ruby>事故<rt>じこ</rt></ruby>がある。16<ruby>人<rt>にん</rt></ruby>が<ruby>亡<rt>な</rt></ruby>くなった<ruby>事故<rt>じこ</rt></ruby>をきっかけに、<ruby>学生<rt>がくせい</rt></ruby>たちは<ruby>工事<rt>こうじ</rt></ruby>の<ruby>記録公開<rt>きろくこうかい</rt></ruby>や<ruby>責任<rt>せきにん</rt></ruby>の<ruby>追及<rt>ついきゅう</rt></ruby>を<ruby>求<rt>もと</rt></ruby>めて<ruby>抗議<rt>こうぎ</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けた。<ruby>改修工事<rt>かいしゅうこうじ</rt></ruby>の<ruby>契約<rt>けいやく</rt></ruby>や<ruby>監督<rt>かんとく</rt></ruby>に<ruby>不正<rt>ふせい</rt></ruby>がなかったかも<ruby>問<rt>と</rt></ruby>われ、<ruby>政府<rt>せいふ</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby>への<ruby>不満<rt>ふまん</rt></ruby>は<ruby>大学<rt>だいがく</rt></ruby>の<ruby>外<rt>そと</rt></ruby>にも<ruby>広<rt>ひろ</rt></ruby>がった。<ruby>運動<rt>うんどう</rt></ruby>は<ruby>二年近<rt>にねんちか</rt></ruby>く<ruby>続<rt>つづ</rt></ruby>いた<ruby>後<rt>あと</rt></ruby>、<ruby>選挙<rt>せんきょ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する<ruby>形<rt>かたち</rt></ruby>へ<ruby>移<rt>うつ</rt></ruby>った。</p>
+<p id="p3">「<ruby>学生<rt>がくせい</rt></ruby>リスト」は<ruby>単<rt>たん</rt></ruby>なる<ruby>学生<rt>がくせい</rt></ruby>の<ruby>集<rt>あつ</rt></ruby>まりではなく、<ruby>大学関係者<rt>だいがくかんけいしゃ</rt></ruby>や<ruby>専門家<rt>せんもんか</rt></ruby>などを<ruby>含<rt>ふく</rt></ruby>む<ruby>候補者名簿<rt>こうほしゃめいぼ</rt></ruby>として<ruby>議会<rt>ぎかい</rt></ruby>に<ruby>挑<rt>いど</rt></ruby>んだ。<ruby>候補者<rt>こうほしゃ</rt></ruby>には<ruby>大学教授<rt>だいがくきょうじゅ</rt></ruby>や<ruby>教員<rt>きょういん</rt></ruby>も<ruby>名<rt>な</rt></ruby>を<ruby>連<rt>つら</rt></ruby>ね、<ruby>従来<rt>じゅうらい</rt></ruby>の<ruby>政党政治<rt>せいとうせいじ</rt></ruby>とは<ruby>異<rt>こと</rt></ruby>なる<ruby>参加<rt>さんか</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>そうとした。<ruby>抗議<rt>こうぎ</rt></ruby>の<ruby>場<rt>ば</rt></ruby>では、<ruby>説明<rt>せつめい</rt></ruby>を<ruby>求<rt>もと</rt></ruby>めるという<ruby>共通<rt>きょうつう</rt></ruby>の<ruby>目標<rt>もくひょう</rt></ruby>を<ruby>掲<rt>かか</rt></ruby>げやすい。<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>議会<rt>ぎかい</rt></ruby>で<ruby>政策<rt>せいさく</rt></ruby>を<ruby>決<rt>き</rt></ruby>めるには、<ruby>教育<rt>きょういく</rt></ruby>、<ruby>雇用<rt>こよう</rt></ruby>、<ruby>公共事業<rt>こうきょうじぎょう</rt></ruby>など<ruby>多様<rt>たよう</rt></ruby>な<ruby>課題<rt>かだい</rt></ruby>に<ruby>順番<rt>じゅんばん</rt></ruby>をつけ、<ruby>異<rt>こと</rt></ruby>なる<ruby>意見<rt>いけん</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>で<ruby>妥協点<rt>だきょうてん</rt></ruby>を<ruby>探<rt>さが</rt></ruby>さなければならない。</p>
+<p id="p4"><ruby>学生<rt>がくせい</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>える<ruby>候補者名簿<rt>こうほしゃめいぼ</rt></ruby>が<ruby>支持<rt>しじ</rt></ruby>を<ruby>集<rt>あつ</rt></ruby>めたことは<ruby>大<rt>おお</rt></ruby>きな<ruby>変化<rt>へんか</rt></ruby>だが、<ruby>選挙<rt>せんきょ</rt></ruby>で<ruby>勝<rt>か</rt></ruby>ったからといって<ruby>政治<rt>せいじ</rt></ruby>の<ruby>仕組<rt>しく</rt></ruby>みまで<ruby>直<rt>ただ</rt></ruby>ちに<ruby>変<rt>か</rt></ruby>わるわけではない。<ruby>公共事業<rt>こうきょうじぎょう</rt></ruby>の<ruby>透明性<rt>とうめいせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めるには、<ruby>資料<rt>しりょう</rt></ruby>を<ruby>公開<rt>こうかい</rt></ruby>する<ruby>制度<rt>せいど</rt></ruby>や<ruby>監督<rt>かんとく</rt></ruby>する<ruby>機関<rt>きかん</rt></ruby>の<ruby>独立性<rt>どくりつせい</rt></ruby>を<ruby>整<rt>ととの</rt></ruby>える<ruby>必要<rt>ひつよう</rt></ruby>がある。<ruby>街頭<rt>がいとう</rt></ruby>での<ruby>抗議<rt>こうぎ</rt></ruby>とは<ruby>異<rt>こと</rt></ruby>なり、<ruby>議会<rt>ぎかい</rt></ruby>では<ruby>予算<rt>よさん</rt></ruby>や<ruby>法律<rt>ほうりつ</rt></ruby>を<ruby>具体的<rt>ぐたいてき</rt></ruby>に<ruby>決<rt>き</rt></ruby>め、<ruby>結果<rt>けっか</rt></ruby>について<ruby>有権者<rt>ゆうけんしゃ</rt></ruby>に<ruby>説明<rt>せつめい</rt></ruby>する<ruby>責任<rt>せきにん</rt></ruby>も<ruby>生<rt>しょう</rt></ruby>じる。</p>
+<p id="p5">さらに、<ruby>幅広<rt>はばひろ</rt></ruby>い<ruby>支持<rt>しじ</rt></ruby>を<ruby>得<rt>え</rt></ruby>たものの、<ruby>支援<rt>しえん</rt></ruby>した<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>期待<rt>きたい</rt></ruby>は<ruby>一<rt>ひと</rt></ruby>つではなく、<ruby>政策<rt>せいさく</rt></ruby>の<ruby>優先順位<rt>ゆうせんじゅんい</rt></ruby>をめぐって<ruby>意見<rt>いけん</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かれる<ruby>可能性<rt>かのうせい</rt></ruby>がある。<ruby>新<rt>あたら</rt></ruby>しい<ruby>議会<rt>ぎかい</rt></ruby>は<ruby>地域<rt>ちいき</rt></ruby>ごとに<ruby>異<rt>こと</rt></ruby>なる<ruby>課題<rt>かだい</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じて<ruby>予算<rt>よさん</rt></ruby>を<ruby>配分<rt>はいぶん</rt></ruby>し、<ruby>住民<rt>じゅうみん</rt></ruby>に<ruby>成果<rt>せいか</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>しなければならない。<ruby>今回<rt>こんかい</rt></ruby>の<ruby>選挙<rt>せんきょ</rt></ruby>は、<ruby>政権交代<rt>せいけんこうたい</rt></ruby>の<ruby>見通<rt>みとお</rt></ruby>しだけでなく、<ruby>抗議<rt>こうぎ</rt></ruby>で<ruby>示<rt>しめ</rt></ruby>された<ruby>要求<rt>ようきゅう</rt></ruby>を<ruby>制度<rt>せいど</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>実現<rt>じつげん</rt></ruby>できるかを<ruby>試<rt>ため</rt></ruby>す<ruby>出発点<rt>しゅっぱつてん</rt></ruby>になった。</p>
+</div>
+</section>
+<section class="card" aria-labelledby="quiz-title">
+<h2 id="quiz-title">长文阅读练习｜3题</h2>
+<p class="quiz-intro">三题分别考查文章主旨、对选举结果的推断，以及段落关系。每题选一个答案，全部作答后点击“确认答案”。</p>
+<form id="quiz-form">
+<fieldset class="quiz-question" data-answer="a" data-evidence="p3 p5" data-quote1="一方で、議会で政策を決めるには、教育、雇用、公共事業など多様な課題に順番をつけ、異なる意見の間で妥協点を探さなければならない。" data-quote2="今回の選挙は、政権交代の見通しだけでなく、抗議で示された要求を制度の中で実現できるかを試す出発点になった。">
+<legend><span class="question-type">主旨理解</span> 1. <ruby>本文全体<rt>ほんぶんぜんたい</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>として、<ruby>最<rt>もっと</rt></ruby>も<ruby>適当<rt>てきとう</rt></ruby>なものはどれか。</legend>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q1" value="a"><span>A. <ruby>学生運動<rt>がくせいうんどう</rt></ruby>が<ruby>選挙<rt>せんきょ</rt></ruby>で<ruby>支持<rt>しじ</rt></ruby>を<ruby>得<rt>え</rt></ruby>た<ruby>後<rt>あと</rt></ruby>、<ruby>抗議<rt>こうぎ</rt></ruby>で<ruby>示<rt>しめ</rt></ruby>された<ruby>要求<rt>ようきゅう</rt></ruby>を<ruby>制度<rt>せいど</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>実現<rt>じつげん</rt></ruby>できるかが<ruby>次<rt>つぎ</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>だ。</span></label>
+<label class="quiz-option"><input type="radio" name="q1" value="b"><span>B. <ruby>選挙管理委員会<rt>せんきょかんりいいんかい</rt></ruby>が<ruby>集計<rt>しゅうけい</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>方法<rt>ほうほう</rt></ruby>を、<ruby>学生<rt>がくせい</rt></ruby>たちが<ruby>新<rt>あたら</rt></ruby>しく<ruby>提案<rt>ていあん</rt></ruby>した。</span></label>
+<label class="quiz-option"><input type="radio" name="q1" value="c"><span>C. <ruby>駅<rt>えき</rt></ruby>の<ruby>事故<rt>じこ</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>工事<rt>こうじ</rt></ruby>の<ruby>詳細<rt>しょうさい</rt></ruby>と、<ruby>建物<rt>たてもの</rt></ruby>の<ruby>設計<rt>せっけい</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>している。</span></label>
+<label class="quiz-option"><input type="radio" name="q1" value="d"><span>D. セルビアでは、<ruby>学生<rt>がくせい</rt></ruby>だけが<ruby>立候補<rt>りっこうほ</rt></ruby>できる<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>議席<rt>ぎせき</rt></ruby>が<ruby>議会<rt>ぎかい</rt></ruby>に<ruby>設<rt>もう</rt></ruby>けられている。</span></label>
+</div>
+<div class="quiz-feedback" hidden></div>
+</fieldset>
+<fieldset class="quiz-question" data-answer="c" data-evidence="p1" data-quote1="ただし、投票日夜の時点で最終結果はまだ発表されていない。" data-quote2="選挙管理委員会の発表と党側の推計を区別して見る必要がある。">
+<legend><span class="question-type">推論理解</span> 2. <ruby>投票日夜<rt>とうひょうびや</rt></ruby>の<ruby>段階<rt>だんかい</rt></ruby>で、<ruby>選挙結果<rt>せんきょけっか</rt></ruby>をどのように<ruby>理解<rt>りかい</rt></ruby>するのが<ruby>適切<rt>てきせつ</rt></ruby>か。</legend>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q2" value="a"><span>A. <ruby>選挙管理委員会<rt>せんきょかんりいいんかい</rt></ruby>が<ruby>学生<rt>がくせい</rt></ruby>リストの<ruby>勝利<rt>しょうり</rt></ruby>を<ruby>正式<rt>せいしき</rt></ruby>に<ruby>確定<rt>かくてい</rt></ruby>した。</span></label>
+<label class="quiz-option"><input type="radio" name="q2" value="b"><span>B. ブチッチ<ruby>氏<rt>し</rt></ruby>の<ruby>発言<rt>はつげん</rt></ruby>は、<ruby>自党<rt>じとう</rt></ruby>の<ruby>得票<rt>とくひょう</rt></ruby>が<ruby>最<rt>もっと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>かったことを<ruby>示<rt>しめ</rt></ruby>している。</span></label>
+<label class="quiz-option"><input type="radio" name="q2" value="c"><span>C. ブチッチ<ruby>氏<rt>し</rt></ruby>は<ruby>敗北<rt>はいぼく</rt></ruby>を<ruby>認<rt>みと</rt></ruby>めたが、その<ruby>根拠<rt>こんきょ</rt></ruby>は<ruby>速報的<rt>そくほうてき</rt></ruby>な<ruby>推計<rt>すいけい</rt></ruby>で、<ruby>正式結果<rt>せいしきけっか</rt></ruby>とは<ruby>区別<rt>くべつ</rt></ruby>すべきだ。</span></label>
+<label class="quiz-option"><input type="radio" name="q2" value="d"><span>D. <ruby>選挙管理委員会<rt>せんきょかんりいいんかい</rt></ruby>は、<ruby>投票日夜<rt>とうひょうびや</rt></ruby>に<ruby>結果<rt>けっか</rt></ruby>の<ruby>発表<rt>はっぴょう</rt></ruby>を<ruby>拒否<rt>きょひ</rt></ruby>した。</span></label>
+</div>
+<div class="quiz-feedback" hidden></div>
+</fieldset>
+<fieldset class="quiz-question" data-answer="a" data-evidence="p3 p4" data-quote1="抗議の場では、説明を求めるという共通の目標を掲げやすい。一方で、議会で政策を決めるには、教育、雇用、公共事業など多様な課題に順番をつけ、異なる意見の間で妥協点を探さなければならない。" data-quote2="街頭での抗議とは異なり、議会では予算や法律を具体的に決め、結果について有権者に説明する責任も生じる。">
+<legend><span class="question-type">段落関係</span> 3. <ruby>第3段落<rt>だいさんだんらく</rt></ruby>と<ruby>第4段落<rt>だいよんだんらく</rt></ruby>の<ruby>関係<rt>かんけい</rt></ruby>として、<ruby>最<rt>もっと</rt></ruby>も<ruby>適当<rt>てきとう</rt></ruby>なものはどれか。</legend>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q3" value="a"><span>A. <ruby>第3段落<rt>だいさんだんらく</rt></ruby>で<ruby>候補者名簿<rt>こうほしゃめいぼ</rt></ruby>の<ruby>構成<rt>こうせい</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>し、<ruby>第4段落<rt>だいよんだんらく</rt></ruby>で<ruby>選挙後<rt>せんきょご</rt></ruby>に<ruby>必要<rt>ひつよう</rt></ruby>となる<ruby>制度面<rt>せいどめん</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>を<ruby>述<rt>の</rt></ruby>べている。</span></label>
+<label class="quiz-option"><input type="radio" name="q3" value="b"><span>B. <ruby>第3段落<rt>だいさんだんらく</rt></ruby>で<ruby>選挙結果<rt>せんきょけっか</rt></ruby>を<ruby>報告<rt>ほうこく</rt></ruby>し、<ruby>第4段落<rt>だいよんだんらく</rt></ruby>でその<ruby>数値<rt>すうち</rt></ruby>を<ruby>修正<rt>しゅうせい</rt></ruby>している。</span></label>
+<label class="quiz-option"><input type="radio" name="q3" value="c"><span>C. <ruby>第3段落<rt>だいさんだんらく</rt></ruby>で<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>詳<rt>くわ</rt></ruby>しく<ruby>説明<rt>せつめい</rt></ruby>し、<ruby>第4段落<rt>だいよんだんらく</rt></ruby>で<ruby>事故現場<rt>じこげんば</rt></ruby>の<ruby>復旧方法<rt>ふっきゅうほうほう</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>している。</span></label>
+<label class="quiz-option"><input type="radio" name="q3" value="d"><span>D. <ruby>第3段落<rt>だいさんだんらく</rt></ruby>で<ruby>議会<rt>ぎかい</rt></ruby>が<ruby>不要<rt>ふよう</rt></ruby>だと<ruby>述<rt>の</rt></ruby>べ、<ruby>第4段落<rt>だいよんだんらく</rt></ruby>で<ruby>抗議<rt>こうぎ</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>ける<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>提案<rt>ていあん</rt></ruby>している。</span></label>
+</div>
+<div class="quiz-feedback" hidden></div>
+</fieldset>
+<div class="quiz-actions"><button id="check-answers" type="button">确认答案</button><button id="reset-quiz" class="secondary" type="reset">重新作答</button></div>
+<p id="quiz-summary" class="quiz-summary" role="status" aria-live="polite"></p>
+</form>
+</section>
+<section class="card translation" id="translation">
+<h2>全文翻译</h2>
+<p>2026年10月25日，塞尔维亚举行了议会选举，长期主导该国政治的亚历山大·武契奇承认学生支持的“学生名单”获胜。不过，投票当晚最终结果尚未公布。武契奇根据初步估算表示，学生方面将获胜。需要将选举管理委员会的公告和政党方面的推算区分开来。塞尔维亚议会由250个席位组成。选举管理委员会公布，截至10月9日，登记选民约645万人。</p>
+<p>这次选举的背景，是2024年11月塞尔维亚北部城市诺维萨德发生的车站屋顶部分坍塌事故。事故造成16人死亡。以这起事故为契机，学生们持续抗议，要求公开工程记录并追究责任。改建工程的合同和监督是否存在不当行为也受到质疑，民众对政府应对方式的不满从大学扩散到社会各处。近两年来，这场运动逐渐转向通过选举参与政治。</p>
+<p>“学生名单”并非单纯由学生组成的团体，而是包含大学相关人士和专家等人的候选人名单，并参与了议会选举。大学教授和教师也列入候选人之中，他们试图展示一种不同于传统政党政治的参与方式。在抗议现场，人们容易围绕“要求政府作出说明”这一共同目标行动。另一方面，要在议会制定政策，就必须为教育、就业、公共事业等多种课题排定优先顺序，并在不同意见之间寻找妥协点。</p>
+<p>学生支持的候选人名单获得支持，是一个重要变化，但不能因为赢得选举，就认为政治机制会立刻改变。要提高公共事业的透明度，需要建立公开资料的制度，并确保监督机构的独立性。与街头抗议不同，议会还要具体制定预算和法律，并向选民说明结果，承担相应责任。</p>
+<p>此外，虽然这场运动获得了广泛支持，但支持者的期待并不完全相同，今后可能会在政策优先顺序上产生分歧。新一届议会需要根据各地区不同的课题分配预算，并向居民说明成果。这次选举不仅带来了政权更替的可能，也成为一次检验：抗议中提出的要求能否在制度内真正实现。</p>
+</section>
+<section class="card">
+<h2>重点词汇</h2>
+<table>
+<thead><tr><th>词语</th><th>含义与用法</th></tr></thead>
+<tbody>
+<tr><td><ruby>議席<rt>ぎせき</rt></ruby></td><td>议会席位；「議会は250議席で構成される」表示议会由250个席位组成。</td></tr>
+<tr><td><ruby>推計<rt>すいけい</rt></ruby></td><td>根据已有数据进行推算；与已经正式确认的结果不同，常用于初步估计。</td></tr>
+<tr><td><ruby>崩落<rt>ほうらく</rt></ruby></td><td>坍塌、崩塌；常用于屋顶、山体、建筑物等发生整体或局部坠落。</td></tr>
+<tr><td><ruby>責任追及<rt>せきにんついきゅう</rt></ruby></td><td>追究责任；「責任を追及する」是常见搭配。</td></tr>
+<tr><td><ruby>妥協点<rt>だきょうてん</rt></ruby></td><td>妥协点；立场不同的人为达成协议而可以接受的共同位置。</td></tr>
+<tr><td><ruby>透明性<rt>とうめいせい</rt></ruby></td><td>透明度、公开性；常用于讨论政策、公共项目或组织运作时的信息公开程度。</td></tr>
+<tr><td><ruby>有権者<rt>ゆうけんしゃ</rt></ruby></td><td>有选举权的人、选民；「有権者に説明する」即向选民作说明。</td></tr>
+<tr><td><ruby>表面化<rt>ひょうめんか</rt></ruby></td><td>显现出来、浮出表面；原本不明显的问题或分歧开始被人看到。</td></tr>
+</tbody>
+</table>
+</section>
+<section class="card">
+<h2>重点语法</h2>
+<div class="grammar-item">
+<h3>1. 名词＋をきっかけに／动词普通形＋のをきっかけに：以……为契机</h3>
+<p>表示某个事件成为随后行动或变化的起点。前后通常是不同的行动或状态变化。本文「事故をきっかけに」说明事故之后学生开始提出要求、参与抗议。</p>
+<ul class="examples">
+<li><ruby>駅<rt>えき</rt></ruby>の<ruby>事故<rt>じこ</rt></ruby>をきっかけに、<ruby>住民<rt>じゅうみん</rt></ruby>が<ruby>安全点検<rt>あんぜんてんけん</rt></ruby>を<ruby>求<rt>もと</rt></ruby>め<ruby>始<rt>はじ</rt></ruby>めた。<span class="example-translation">（车站事故发生后，居民开始要求进行安全检查。）</span></li>
+<li><ruby>留学<rt>りゅうがく</rt></ruby>したことをきっかけに、<ruby>別<rt>べつ</rt></ruby>の<ruby>国<rt>くに</rt></ruby>の<ruby>選挙制度<rt>せんきょせいど</rt></ruby>にも<ruby>関心<rt>かんしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つようになった。<span class="example-translation">（以留学为契机，我也开始关心其他国家的选举制度。）</span></li>
+</ul>
+</div>
+<div class="grammar-item">
+<h3>2. 普通形＋一方で：另一方面；与此同时</h3>
+<p>用于并列呈现相关的两个方面，也可以对照两个不同主体的情况。动词和い形容词前接普通形；名词、ナ形容词常用「である一方で」。本文先写抗议容易形成共同目标，再转向议会政策需要协调分歧。</p>
+<ul class="examples">
+<li><ruby>新<rt>あたら</rt></ruby>しい<ruby>制度<rt>せいど</rt></ruby>は<ruby>手続<rt>てつづ</rt></ruby>きを<ruby>簡単<rt>かんたん</rt></ruby>にする<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>監視<rt>かんし</rt></ruby>する<ruby>仕組<rt>しく</rt></ruby>みも<ruby>必要<rt>ひつよう</rt></ruby>だ。<span class="example-translation">（新制度简化流程，另一方面也需要监督机制。）</span></li>
+<li><ruby>地域住民<rt>ちいきじゅうみん</rt></ruby>は<ruby>支援<rt>しえん</rt></ruby>を<ruby>歓迎<rt>かんげい</rt></ruby>する<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>説明<rt>せつめい</rt></ruby>が<ruby>不足<rt>ふそく</rt></ruby>していると<ruby>感<rt>かん</rt></ruby>じている。<span class="example-translation">（当地居民欢迎这项援助，同时也觉得说明还不够。）</span></li>
+</ul>
+</div>
+<div class="grammar-item">
+<h3>3. 普通形＋からといって、～わけではない：不能因为……就认为……</h3>
+<p>「からといって」后面常接「わけではない」「とは限らない」等部分否定，表示前项理由不足以推出后项结论。本文指出，即使赢得选举，也不代表政治机制会立刻改变。动词、い形容词、ナ形容词和名词均可接普通形；名词、ナ形容词通常带「だ」。</p>
+<ul class="examples">
+<li><ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>候補者<rt>こうほしゃ</rt></ruby>だからといって、<ruby>政策<rt>せいさく</rt></ruby>に<ruby>詳<rt>くわ</rt></ruby>しいわけではない。<span class="example-translation">（不能因为候选人有名，就认为他熟悉政策。）</span></li>
+<li><ruby>一度<rt>いちど</rt></ruby><ruby>議会<rt>ぎかい</rt></ruby>で<ruby>決<rt>き</rt></ruby>まったからといって、すぐに<ruby>問題<rt>もんだい</rt></ruby>が<ruby>解決<rt>かいけつ</rt></ruby>するわけではない。<span class="example-translation">（不能因为议会通过了一次，就认为问题马上解决了。）</span></li>
+</ul>
+</div>
+<div class="grammar-item">
+<h3>4. 名词＋に応じて／に応じた：根据……；按照……</h3>
+<p>表示以某个标准、需要或具体情况为依据，调整后项的内容。本文「地域ごとに異なる課題に応じて」说明预算分配要考虑不同地区的实际问题。</p>
+<ul class="examples">
+<li><ruby>自治体<rt>じちたい</rt></ruby>は、<ruby>地域<rt>ちいき</rt></ruby>の<ruby>人口<rt>じんこう</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じて<ruby>公共交通<rt>こうきょうこうつう</rt></ruby>の<ruby>本数<rt>ほんすう</rt></ruby>を<ruby>調整<rt>ちょうせい</rt></ruby>している。<span class="example-translation">（地方政府根据地区人口调整公共交通的班次。）</span></li>
+<li><ruby>支援<rt>しえん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>は、<ruby>被災地<rt>ひさいち</rt></ruby>の<ruby>要望<rt>ようぼう</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じて<ruby>見直<rt>みなお</rt></ruby>された。<span class="example-translation">（援助内容根据受灾地区的要求进行了调整。）</span></li>
+</ul>
+</div>
+</section>
+<section class="card">
+<h2>参考来源</h2>
+<ul class="sources">
+<li><a href="https://apnews.com/article/serbia-election-students-vucic-fdf5def8a20aebc8ae139fd719478775" target="_blank" rel="noopener">AP：Serbia’s Aleksandar Vucic concedes defeat to student-led movement in seismic political shift</a>，2026-10-25；核对武契奇承认败选、学生支持的名单及议会选举背景。</li>
+<li><a href="https://www.marketscreener.com/news/serbia-s-vucic-concedes-defeat-to-student-led-movement-in-parliamentary-election-ce785cdfd18ff024" target="_blank" rel="noopener">Reuters：Serbia's Vucic concedes defeat to student led movement in parliamentary election</a>，2026-10-25；交叉核对当晚的初步推算及最终结果尚未公布。</li>
+<li><a href="https://www.rik.parlament.gov.rs/vest/en/4104/52nd-session-of-the-republic-electoral-commission-.php" target="_blank" rel="noopener">塞尔维亚共和国选举委员会：第52次会议</a>，2026-10-11；核对登记选民人数（截至10月9日为6,450,523人）。</li>
+</ul>
+</section>
+
+</main>
+
+</main>
+
+<script>
+const button=document.getElementById("furigana-toggle");
+button.addEventListener("click",()=>{
+  const enabled=document.body.classList.toggle("reading-on");
+  button.setAttribute("aria-pressed",String(enabled));
+  button.textContent=enabled?"ふりがなを隠す":"ふりがなを表示";
+});
+</script>
+<script>
+const quizForm = document.getElementById("quiz-form");
+const quizQuestions = [...quizForm.querySelectorAll(".quiz-question")];
+const quizSummary = document.getElementById("quiz-summary");
+const checkAnswers = document.getElementById("check-answers");
+function clearQuizFeedback() {
+  quizQuestions.forEach((question) => {
+    question.classList.remove("is-correct", "is-incorrect");
+    const feedback = question.querySelector(".quiz-feedback");
+    feedback.hidden = true;
+    feedback.replaceChildren();
+  });
+  quizSummary.textContent = "";
+}
+checkAnswers.addEventListener("click", () => {
+  clearQuizFeedback();
+  const unanswered = quizQuestions.filter((question) => !question.querySelector("input:checked"));
+  if (unanswered.length) {
+    quizSummary.textContent = `还有 ${unanswered.length} 题未选择，请完成后再核对。`;
+    unanswered[0].querySelector("legend").scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+  let score = 0;
+  quizQuestions.forEach((question, index) => {
+    const selected = question.querySelector("input:checked").value;
+    const correct = selected === question.dataset.answer;
+    if (correct) score += 1;
+    question.classList.add(correct ? "is-correct" : "is-incorrect");
+    const feedback = question.querySelector(".quiz-feedback");
+    const status = document.createElement("strong");
+    status.textContent = `${correct ? "回答正确" : "未答对"}。正确答案：${question.dataset.answer.toUpperCase()}。`;
+    feedback.append(status, document.createElement("br"));
+    const evidenceIds = question.dataset.evidence.trim().split(/\s+/);
+    evidenceIds.forEach((id, evidenceIndex) => {
+      const paragraphNumber = Number(id.replace(/^p/, ""));
+      const evidence = document.createElement("p");
+      evidence.className = "quiz-evidence";
+      const link = document.createElement("a");
+      link.href = `#${id}`;
+      link.textContent = `查看原文第 ${paragraphNumber} 段`;
+      evidence.append(link, document.createTextNode(`：「${question.dataset[`quote${evidenceIndex + 1}`]}」`));
+      feedback.append(evidence);
+    });
+    feedback.hidden = false;
+  });
+  quizSummary.textContent = `答对 ${score} / ${quizQuestions.length} 题。可点击各题的原文段落链接核对依据。`;
+});
+document.getElementById("reset-quiz").addEventListener("click", () => {
+  quizForm.reset();
+  clearQuizFeedback();
+});
+quizForm.addEventListener("change", clearQuizFeedback);
+</script>
+</body>
+</html>
